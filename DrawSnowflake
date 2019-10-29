@@ -1,0 +1,73 @@
+function Right() {
+  turnLeft();
+  turnLeft();
+  turnLeft();
+}
+
+function drawSide1() {
+  moveForward();
+  Right();
+  moveForward();
+  turnLeft();
+  moveForward();
+  Right();
+  moveForward();
+  turnLeft();
+}
+
+function drawSide2() {
+  Right();
+  Right();
+  moveForward();
+  turnLeft();
+  moveForward();
+  turnLeft();
+  moveForward();
+  Right();
+  moveForward();
+  turnLeft();
+  moveForward();
+  turnLeft();
+}
+
+function drawSquare() {
+  penUp();
+  moveForward();
+  moveForward();
+  moveForward();
+  Right();
+  penDown();
+  moveForward();
+  turnLeft();
+  moveForward();
+  turnLeft();
+  moveForward();
+  turnLeft();
+  moveForward();
+  penUp();
+  moveForward();
+  moveForward();
+  moveForward();
+  Right();
+  Right();
+}
+
+
+function drawImagepart() {
+  drawSide1();
+  drawSide2();
+}
+
+
+function drawImage(){
+drawImagepart();
+drawImagepart();
+drawImagepart();
+drawImagepart();
+drawSquare();
+  }
+  
+  drawImage();
+
+
+
